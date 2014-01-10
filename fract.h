@@ -71,6 +71,7 @@ namespace fract
         // Ensure x <= HALF_PI ( 90 degrees )
         
         fract< Calculator > nx( x );
+        nx.makePositive();
         
         if( nx > fract< Calculator >::HALF_PI )
         {
@@ -127,6 +128,7 @@ namespace fract
         // Ensure x <= HALF_PI ( 90 degrees )
 
         fract< Calculator > nx( x );
+        nx.makePositive();
 
         if( nx > fract< Calculator >::HALF_PI )
         {
