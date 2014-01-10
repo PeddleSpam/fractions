@@ -264,7 +264,7 @@ bool const sineTest( int_type const divisionCount,
     
     sfract_type * table = new sfract_type[ ( unsigned int )divisionCount ];
     sfract_type const delta = sfract_type::HALF_PI /
-                             sfract_type( fract_type( divisionCount, true ) );
+                              sfract_type( fract_type( divisionCount, true ) );
     delta.evaluate();
     
     for( int_type i = 0; i < divisionCount; i += 1 )
